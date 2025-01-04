@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkss_ui=self.webpackChunkss_ui||[]).push([[591],{591:(s,a,e)=>{s.exports=e.p+"static/media/Syllabus_Core_Java_and_Advanced_Java.7560c85c17fc2f92cd6e.pdf"}}]);

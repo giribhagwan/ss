@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkss_ui=self.webpackChunkss_ui||[]).push([[985],{985:(s,e,u)=>{s.exports=u.p+"static/media/Angular_4Syllabus.2b22087e51de2fc1b019.pdf"}}]);
