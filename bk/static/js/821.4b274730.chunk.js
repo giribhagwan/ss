@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkss_ui=self.webpackChunkss_ui||[]).push([[821],{821:(s,e,p)=>{s.exports=p.p+"static/media/JavaScript.1b7d32d23db495b4d908.jpg"}}]);

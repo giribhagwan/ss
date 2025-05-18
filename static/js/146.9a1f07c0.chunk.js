@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkss_ui=self.webpackChunkss_ui||[]).push([[146],{146:(s,a,e)=>{s.exports=e.p+"static/media/ReactJSSyllabus.8aa42b3b96a5e40d903f.pdf"}}]);
