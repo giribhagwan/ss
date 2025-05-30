@@ -1765,3 +1765,16 @@ padding:50px 0
     padding: 22px 0 14px;
     font-size: 18px;
 }
+.textbox {
+	transition: transform 0.3s, background-color 0.3s;
+  }
+.textbox {
+    cursor: pointer;
+    transition: all 0.3s ease; /* smooth hover */
+}
+
+.textbox:hover {
+    transform: scale(1.05);
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
