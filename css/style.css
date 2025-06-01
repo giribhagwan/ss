@@ -334,19 +334,19 @@ left:0px;
 .flex-direction-nav .flex-next{ 
 right:0px;
 }
-.flex-caption {zoom:0;
+.flex-caption {
   color: #1C1D21;
   margin: 0 auto;
   padding: 1px;
   position: absolute;
-  vertical-align: bottom;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.26);
   bottom: 5%;
   display: block;
   left: 0;
   right: 0;
-  }
+}
+
 .flex-caption h3 {color: #fff; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase;}
 .flex-caption p {margin: 0 0 15px;}
 .skill-home{
@@ -682,25 +682,19 @@ form#commentform input[type="text"] {
 
 form#commentform textarea {
   width: 100%;
-  padding-left:20px;
-  padding-top:10px;
-  font-size:13px;
-  padding-right:20px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-	-webkit-border-radius: 2px 2px 2px 2px;
-		-moz-border-radius: 2px 2px 2px 2px;
-			border-radius: 2px 2px 2px 2px;
+  padding: 10px 20px 0 20px;
+  font-size: 13px;
+  box-sizing: border-box;
+  border-radius: 2px;
 }
 
-
-/* --- search form --- */
-.search{
-	float:right;
-	margin:35px 0 0;
-	padding-bottom:0;
+/* Search form */
+.search {
+  float: right;
+  margin: 35px 0 0;
+  padding-bottom: 0;
 }
+
 
 #inner-headline form.input-append {
 	margin:0;
@@ -731,8 +725,10 @@ form#commentform textarea {
 }
 
 .work-nav #filters li a:hover {
-
+  color: #ff6600;
+  text-decoration: underline;
 }
+
 
 .work-nav #filters li a.selected {
 	color: #DE5E60;
@@ -1224,7 +1220,7 @@ background: #F9F9F9;
 	color:#fff;
 }
 .pricing-box-item.activeItem .pricing-heading h3 {
-	 
+    font-size: 20px;
 }
 
 .pricing-box-item .pricing-heading h3 strong {
@@ -1469,8 +1465,7 @@ article img.pull-right, article .align-right{
 	float:right;
 	margin:5px 0 15px 15px;
 }
- ============================= */
-
+ 
 .clear-marginbot{
 	margin-bottom:0;
 }
