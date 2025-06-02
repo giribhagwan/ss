@@ -75,14 +75,48 @@ header .navbar {
 
 .navbar-brand {
     color: #222;
-	text-transform: uppercase;
+    text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
     line-height: 1em;
-	letter-spacing: -1px;
-    margin-top: 13px;
-    padding: 0 0 0 15px;
+    letter-spacing: -1px;
+    margin-top: 0;           /* Remove top margin for better vertical alignment */
+    padding: 0 0 0 0;        /* Remove left padding */
+    display: flex;           /* Use flex for vertical centering */
+    align-items: center;     /* Vertically center logo and text */
+    height: 70px;            /* Match navbar height */
 }
+
+.navbar-brand img {
+    height: 60px;            /* Adjust logo height for better fit */
+    width: auto;
+    max-width: 220px;
+    object-fit: contain;
+    margin: 0;               /* Remove extra margin */
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .navbar-brand {
+        height: 54px;
+        justify-content: center; /* Center logo on mobile */
+    }
+    .navbar-brand img {
+        height: 44px;
+        max-width: 140px;
+    }
+}
+@media (max-width: 480px) {
+    .navbar-brand {
+        height: 40px;
+    }
+    .navbar-brand img {
+        height: 32px;
+        max-width: 100px;
+    }
+}
+
 .navbar-default .navbar-brand{
 color: #61B331;
 }
@@ -1420,7 +1454,6 @@ a.scrollup i:hover {
 .aligncenter{
 	text-align:center;
 }
-
 .aligncenter span{
 	margin-left:0;
 }
@@ -1438,7 +1471,7 @@ a.scrollup i:hover {
 }
 
 .aligncenter {
-	text-align:center;
+    text-align: center;
 }
  
 img.pull-left, .align-left{
@@ -1503,9 +1536,6 @@ article img.pull-right, article .align-right{
 	margin-top:40px;
 }
 
-
-/*  Media queries 
-============================= */
 
 @media (min-width: 768px) and (max-width: 979px) {
 
@@ -1753,19 +1783,29 @@ padding:50px 0
 	}
 .textbox {
     background-color: #EFEFEF;
-    padding: 4px 25px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    font-size: 15px;
 }
-.textbox h3 {
+
+.textbox h3, .textbox h4 {
     margin: 0;
     padding: 22px 0 14px;
     font-size: 18px;
 }
-.textbox {
-	transition: transform 0.3s, background-color 0.3s;
-  }
-.textbox {
-    cursor: pointer;
-    transition: all 0.3s ease; /* smooth hover */
+
+.textbox p {
+    font-size: 15px;
+    line-height: 1.4em;
+    margin-bottom: 0;
 }
 
 .textbox:hover {
@@ -1783,3 +1823,89 @@ padding:50px 0
   animation: twinkle 1s infinite;
   color: #e74c3c;
 }
+/* Responsive adjustments for mobile and tablet */
+@media (max-width: 991px) {
+	.textbox {
+		margin-bottom: 24px;
+	}
+	.navbar-header {
+		float: none;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+	.navbar-collapse {
+		border-top: 1px solid #eee;
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	}
+	.navbar-collapse.collapse {
+		display: none!important;
+	}
+	.navbar-nav {
+		float: none!important;
+		margin: 7.5px -15px;
+	}
+	.navbar-nav>li {
+		float: none;
+	}
+	.navbar-nav>li>a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.in .navbar-collapse {
+		display: block!important;
+	}
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        height: 54px;
+        justify-content: center; /* Center logo on mobile */
+    }
+    .navbar-brand img {
+        height: 44px;
+        max-width: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+	.pageTitle, h3, h4 {
+		font-size: 1.1em;
+	}
+	.twinkle-text {
+		font-size: 18px!important;
+	}
+	.textbox {
+		font-size: 15px;
+	}
+	.navbar-brand img {
+		max-width: 120px;
+		height: auto;
+	}
+}
+.navbar-brand img {
+	height: 90px;
+	width: auto;
+	max-width: 320px;
+	object-fit: contain;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+@media (max-width: 767px) {
+    .navbar-brand img {
+        height: 64px;
+        max-width: 200px;
+    }
+}
+@media (max-width: 480px) {
+    .navbar-brand img {
+        max-width: 120px;
+        height: auto;
+    }
+}
+
+/* Responsive margin-bottom for cards */
+.mb-4 {
+    margin-bottom: 24px;
+}
+
