@@ -1,3 +1,4 @@
+
 jQuery.noConflict();
 jQuery(document).ready(function($){
 
@@ -20,7 +21,7 @@ if (jQuery().quicksand) {
 		$(".portfolio-area").quicksand($filteredData, {
 			duration: 600,
 			adjustHeight: 'auto'
-		}	
+		});
 		$(this).addClass("active"); 			
 		return false;
 	});

@@ -58,114 +58,73 @@
 	</div>
 	</section>
 	<section id="content">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<ul class="portfolio-categ filter">
-					<li class="all active"><a href="#">All</a></li>
-					<li class="web"><a href="#" title="">Web design</a></li>
-					<li class="icon"><a href="#" title="">Mobile App</a></li>
-					<li class="graphic"><a href="#" title="">UI design</a></li>
-				</ul>
-				<div class="clearfix">
-				</div>
-				<div class="row">
-					<section id="projects">
-					<ul id="thumbs" class="portfolio">
-						<!-- Item Project and Filter Name -->
-						<li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="web">
-						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/1.jpg">
-						<span class="overlay-img"></span>
-						<span class="overlay-img-thumb"><i class="icon-info-blocks fa fa-code"></i></span>
-						</a>
-						<!-- Thumb Image and Description -->
-						<img src="img/works/1.jpg" alt="">
-						</li>
-						<!-- End Item Project -->
-						<!-- Item Project and Filter Name -->
-						<li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
-						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/2.jpg">
-						<span class="overlay-img"></span>
-						<span class="overlay-img-thumb"><i class="icon-info-blocks fa fa-code"></i></span>
-						</a>
-						<!-- Thumb Image and Description -->
-						<img src="img/works/2.jpg" alt="">
-						</li>
-						<!-- End Item Project -->
-						<!-- Item Project and Filter Name -->
-						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="graphic">
-						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/3.jpg">
-						<span class="overlay-img"></span>
-						<span class="overlay-img-thumb"><i class="icon-info-blocks fa fa-code"></i></span>
-						</a>
-						<!-- Thumb Image and Description -->
-						<img src="img/works/3.jpg" alt="">
-						</li>
-						<!-- End Item Project -->
-						<!-- Item Project and Filter Name -->
-						<li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="web">
-						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/4.jpg">
-						<span class="overlay-img"></span>
-						<span class="overlay-img-thumb"><i class="icon-info-blocks fa fa-code"></i></span>
-						</a>
-						<!-- Thumb Image and Description -->
-						<img src="img/works/4.jpg" alt="">
-						</li>
-						<!-- End Item Project -->
-						<!-- Item Project and Filter Name -->
-						<li class="item-thumbs col-lg-3 photography" data-id="id-4" data-type="web">
-						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/5.jpg">
-						<span class="overlay-img"></span>
-						<span class="overlay-img-thumb"><i class="icon-info-blocks fa fa-code"></i></span>
-						</a>
-						<!-- Thumb Image and Description -->
-						<img src="img/works/5.jpg" alt="">
-						</li>
-						<!-- End Item Project -->
-						<!-- Item Project and Filter Name -->
-						<li class="item-thumbs col-lg-3 photography" data-id="id-5" data-type="icon">
-						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/6.jpg">
-						<span class="overlay-img"></span>
-						<span class="overlay-img-thumb"><i class="icon-info-blocks fa fa-code"></i></span>
-						</a>
-						<!-- Thumb Image and Description -->
-						<img src="img/works/6.jpg" alt="">
-						</li>
-						<!-- End Item Project -->
-						<li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="web">
-						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/7.jpg">
-						<span class="overlay-img"></span>
-						<span class="overlay-img-thumb"><i class="icon-info-blocks fa fa-code"></i></span>
-						</a>
-						<!-- Thumb Image and Description -->
-						<img src="img/works/7.jpg" alt="">
-						</li>
-						<!-- End Item Project -->
-						<!-- Item Project and Filter Name -->
-						<li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="graphic">
-						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/8.jpg">
-						<span class="overlay-img"></span>
-						<span class="overlay-img-thumb"><i class="icon-info-blocks fa fa-code"></i></span>
-						</a>
-						<!-- Thumb Image and Description -->
-						<img src="img/works/8.jpg" alt="">
-						</li>
-						<!-- End Item Project -->
-					</ul>
-					</section>
-				</div>
-			</div>
-		</div>
-	</div>
-	</section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Filter Buttons -->
+       <ul class="portfolio-categ filter text-center mb-4">
+  <li><a class="filter-button active" data-filter="all" href="#">All</a></li>
+  <li><a class="filter-button" data-filter="web" href="#">Web Design</a></li>
+  <li><a class="filter-button" data-filter="icon" href="#">Mobile App</a></li>
+  <li><a class="filter-button" data-filter="graphic" href="#">UI Design</a></li>
+</ul>
+
+
+        <div class="clearfix"></div>
+
+        <!-- Portfolio Grid -->
+        <div class="row">
+          <section id="projects">
+            <ul id="thumbs" class="portfolio d-flex flex-wrap justify-content-center">
+
+              <!-- Portfolio Item -->
+              <li class="item-thumbs col-lg-3 col-md-4 col-sm-6" data-type="web">
+                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="E-commerce Website" href="img/works/1.jpg">
+                  <span class="overlay-img"></span>
+                  <span class="overlay-img-thumb"><i class="icon-info-blocks fa fa-code"></i></span>
+                </a>
+                <img src="img/works/1.jpg" alt="E-commerce Website" />
+                <div class="project-info">
+                  <h4 class="project-title">E-commerce Web App</h4>
+                  <p class="project-description">Built with React and Node.js</p>
+                </div>
+              </li>
+
+              <!-- Duplicate and change for each project -->
+              <li class="item-thumbs col-lg-3 col-md-4 col-sm-6" data-type="icon">
+                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Mobile Tracker App" href="img/works/2.jpg">
+                  <span class="overlay-img"></span>
+                  <span class="overlay-img-thumb"><i class="icon-info-blocks fa fa-mobile"></i></span>
+                </a>
+                <img src="img/works/2.jpg" alt="Mobile App" />
+                <div class="project-info">
+                  <h4 class="project-title">Mobile Tracker</h4>
+                  <p class="project-description">Flutter-based GPS tracker</p>
+                </div>
+              </li>
+
+              <li class="item-thumbs col-lg-3 col-md-4 col-sm-6" data-type="graphic">
+                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="UI Redesign" href="img/works/3.jpg">
+                  <span class="overlay-img"></span>
+                  <span class="overlay-img-thumb"><i class="icon-info-blocks fa fa-paint-brush"></i></span>
+                </a>
+                <img src="img/works/3.jpg" alt="UI Redesign" />
+                <div class="project-info">
+                  <h4 class="project-title">UI Redesign</h4>
+                  <p class="project-description">Modern UI/UX for a CRM app</p>
+                </div>
+              </li>
+
+              <!-- Add more items as needed -->
+
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 	<footer>
 	<div class="container">
 		<div class="row">
@@ -234,5 +193,7 @@
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/filter.js"></script>
+
 </body>
 </html>

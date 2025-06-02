@@ -1908,4 +1908,44 @@ padding:50px 0
 .mb-4 {
     margin-bottom: 24px;
 }
+.project-info {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+.project-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.project-description {
+  font-size: 14px;
+  color: #777;
+}
+.item-thumbs {
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.item-thumbs:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.portfolio-categ.filter li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.portfolio-categ.filter a {
+  padding: 6px 15px;
+  background: #eee;
+  color: #333;
+  border-radius: 20px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.portfolio-categ.filter a.active,
+.portfolio-categ.filter a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
 
