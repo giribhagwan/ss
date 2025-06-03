@@ -25,17 +25,15 @@ jQuery(document).ready(function($) {
 		);
 		
 		
-		$('.accordion').on('show', function (e) {
-		
-			$(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
-			$(e.target).prev('.accordion-heading').find('.accordion-toggle i').removeClass('icon-plus');
-			$(e.target).prev('.accordion-heading').find('.accordion-toggle i').addClass('icon-minus');
+		// Updated accordion events to use Bootstrap collapse with panel structure
+		$('.panel-group').on('show.bs.collapse', function (e) {
+			var $target = $(e.target);
+			$target.siblings('.panel-heading').find('i.fa').removeClass('fa-angle-right').addClass('fa-angle-down');
 		});
 		
-		$('.accordion').on('hide', function (e) {
-			$(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
-			$(this).find('.accordion-toggle i').not($(e.target)).removeClass('icon-minus');
-			$(this).find('.accordion-toggle i').not($(e.target)).addClass('icon-plus');
+		$('.panel-group').on('hide.bs.collapse', function (e) {
+			var $target = $(e.target);
+			$target.siblings('.panel-heading').find('i.fa').removeClass('fa-angle-down').addClass('fa-angle-right');
 		});	
 
 		
@@ -132,6 +130,82 @@ jQuery(document).ready(function($) {
         manualControls      : "",                //Selector: Declare custom control navigation. Examples would be ".flex-control-nav li" or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
         sync                : "",                //{NEW} Selector: Mirror the actions performed on this slider with another slider. Use with care.
         asNavFor            : "",                //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
+    });
+
+    // Mobile Navigation Enhancements
+    $(document).ready(function() {
+        // Close mobile menu on item click
+        $('.navbar-nav li a').on('click', function(){
+            if (!$(this).parent().hasClass('dropdown')) {
+                $('.navbar-collapse').collapse('hide');
+            }
+        });
+
+        // Add touch support for dropdown menus
+        if ('ontouchstart' in document.documentElement) {
+            $('.dropdown-toggle').on('click', function(e) {
+                if ($(this).parent().hasClass('open')) {
+                    window.location = $(this).attr('href');
+                }
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 70
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+
+        // Handle viewport height on mobile devices
+        function setMobileViewportHeight() {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        
+        setMobileViewportHeight();
+        window.addEventListener('resize', setMobileViewportHeight);
+
+        // Add swipe support for carousels
+        $(".carousel").swipe({
+            swipe: function(event, direction) {
+                if (direction === 'left') {
+                    $(this).carousel('next');
+                }
+                if (direction === 'right') {
+                    $(this).carousel('prev');
+                }
+            },
+            allowPageScroll: "vertical"
+        });
+
+        // Lazy loading for images
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.src = img.dataset.src;
+            });
+        } else {
+            // Fallback for browsers that don't support lazy loading
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+            document.body.appendChild(script);
+        }
+
+        // Handle orientation changes
+        window.addEventListener('orientationchange', function() {
+            // Reset any necessary layouts
+            $('.navbar-collapse').collapse('hide');
+            // Trigger resize event for any responsive elements
+            window.dispatchEvent(new Event('resize'));
+        });
     });
 
 });

@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Latest Events- ScriptSprite</title>
+<title>Latest Events & Workshops - ScriptSprite Training Institute</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="" />
+<meta name="description" content="Stay updated with ScriptSprite's latest events, workshops, and training programs in Pune. Join our upcoming full stack development workshops, hackathons, and tech sessions." />
+<!-- SEO Meta Tags -->
+<meta name="keywords" content="software training events pune, tech workshops, full stack development workshop, hackathon pune, free coding workshops" />
+<meta name="author" content="ScriptSprite" />
+<meta property="og:title" content="Latest Events & Workshops - ScriptSprite Training Institute" />
+<meta property="og:description" content="Join our upcoming tech events and workshops. Free 4-day full stack development workshop, hackathons, and specialized training sessions in Pune." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://scriptsprite.com/latest-events.html" />
+<meta property="og:image" content="img/logo 2.png" />
+<!-- Security Headers -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; style-src 'self' https: 'unsafe-inline'; img-src 'self' https: data:; font-src 'self' https: data:;">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 
 <!-- css -->
 <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -14,8 +28,10 @@
 <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" />
 
+<!-- Modern polyfills for older browsers -->
 <!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <![endif]-->
 </head>
 <body>
@@ -64,51 +80,74 @@
             <!-- Live Events -->
             <div class="row mb-4">
                 <div class="col-12">
-                    <h2>Live Events</h2>
-
-                    <p style="font-size: 20px; font-weight: bold; color: #2c3e50;">
-                        🚀 4-Day Free Live Full Stack Workshop by Industry Expert (11+ Years Experience) 📢🚨
-                        <br><br>
-                        📋 Registration Link:
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdggMSdD2LRh7Q96ZqKLJFxQ9fzeC_P-Zro86pKhLu6-wkMgQ/viewform"
-                           target="_blank"
-                           style="color: #007bff; text-decoration: underline;">
-                            Click here to register
-                        </a>
-                        <br>
-                        🔗 Joining Link:
-                        <a href="https://us06web.zoom.us/j/84698263973?pwd=e72rc31lONQlmKgp6y0habKvGlPg4H.1"
-                           target="_blank"
-                           style="color: #007bff; text-decoration: underline;">
-                            Join Zoom Meeting
-                        </a>
-                    </p>
+                    <h2>Upcoming Live Events</h2>
+                    <div class="event-highlight" itemscope itemtype="http://schema.org/Event">
+                        <p style="font-size: 20px; font-weight: bold; color: #2c3e50;">
+                            🚀 <span itemprop="name">4-Day Free Live Full Stack Workshop</span> by Industry Expert (11+ Years Experience) 📢🚨
+                        </p>
+                        <div class="event-details" itemprop="description">
+                            <p>Join our comprehensive workshop covering:</p>
+                            <ul>
+                                <li>Frontend Development with React</li>
+                                <li>Backend Development with Spring Boot</li>
+                                <li>Database Integration</li>
+                                <li>Real-world Project Implementation</li>
+                            </ul>
+                        </div>
+                        <meta itemprop="organizer" content="ScriptSprite" />
+                        <meta itemprop="location" content="Online via Zoom" />
+                        <div class="event-links">
+                            <p>📋 <strong>Registration:</strong>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdggMSdD2LRh7Q96ZqKLJFxQ9fzeC_P-Zro86pKhLu6-wkMgQ/viewform"
+                                   target="_blank"
+                                   class="btn btn-primary"
+                                   rel="noopener">
+                                    Register Now
+                                </a>
+                            </p>
+                            <p>🔗 <strong>Join Meeting:</strong>
+                                <a href="https://us06web.zoom.us/j/84698263973?pwd=e72rc31lONQlmKgp6y0habKvGlPg4H.1"
+                                   target="_blank"
+                                   class="btn btn-info"
+                                   rel="noopener">
+                                    Zoom Link
+                                </a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Event Cards -->
+            <!-- Event Schedule -->
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="textbox">
-                        <h4>🔹 Day 1: Introduction & Project Demo</h4>
-                        <p>Kickstart your journey with an overview of full-stack development and a walkthrough of the live project you’ll be building. Get a clear vision of how frontend and backend connect.</p>
+                <div class="col-12">
+                    <h3 class="section-title">Workshop Schedule</h3>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="textbox" itemscope itemtype="http://schema.org/Event">
+                        <h4 itemprop="name">🔹 Day 1: Introduction & Project Demo</h4>
+                        <p itemprop="description">Kickstart your journey with an overview of full-stack development and a walkthrough of the live project you'll be building. Get a clear vision of how frontend and backend connect.</p>
+                        <meta itemprop="startDate" content="2024-03-25T10:00" />
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="textbox">
-                        <h4>🔹 Day 2: Frontend with ReactJS</h4>
-                        <p>Learn how to build a dynamic and responsive user interface using ReactJS. We’ll cover components, props, state, and more to help you build the frontend like a pro.</p>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="textbox" itemscope itemtype="http://schema.org/Event">
+                        <h4 itemprop="name">🔹 Day 2: Frontend with ReactJS</h4>
+                        <p itemprop="description">Learn how to build a dynamic and responsive user interface using ReactJS. We'll cover components, props, state, and more to help you build the frontend like a pro.</p>
+                        <meta itemprop="startDate" content="2024-03-26T10:00" />
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="textbox">
-                        <h4>🔹 Day 3: Backend with Java + Spring Boot</h4>
-                        <p>Dive into backend development using Java and Spring Boot. Understand REST APIs, database connectivity, and how to power your frontend with real-time data.</p>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="textbox" itemscope itemtype="http://schema.org/Event">
+                        <h4 itemprop="name">🔹 Day 3: Backend with Java + Spring Boot</h4>
+                        <p itemprop="description">Dive into backend development using Java and Spring Boot. Understand REST APIs, database connectivity, and how to power your frontend with real-time data.</p>
+                        <meta itemprop="startDate" content="2024-03-27T10:00" />
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="textbox">
-                        <h4>🔹 Day 4: Q&A + Live Debugging + Career Guidance</h4>
-                        <p>Clear all your doubts, watch real-time debugging of common issues, and get valuable guidance on building a successful career as a Java Full-Stack Developer.</p>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="textbox" itemscope itemtype="http://schema.org/Event">
+                        <h4 itemprop="name">🔹 Day 4: Q&A + Live Debugging + Career Guidance</h4>
+                        <p itemprop="description">Clear all your doubts, watch real-time debugging of common issues, and get valuable guidance on building a successful career as a Java Full-Stack Developer.</p>
+                        <meta itemprop="startDate" content="2024-03-28T10:00" />
                     </div>
                 </div>
             </div>
@@ -231,11 +270,11 @@
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 
 <!-- JS files -->
-<script src="js/jquery.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav43/XHFju/LSPr1r0Fn1q3nxz0x1ONyg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script> 
+<script src="js/jquery.fancybox-media.js"></script>
 <script src="js/portfolio/jquery.quicksand.js"></script>
 <script src="js/portfolio/setting.js"></script>
 <script src="js/jquery.flexslider.js"></script>
