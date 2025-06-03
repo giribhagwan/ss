@@ -1951,7 +1951,7 @@ padding:50px 0
 
 @media (min-width: 992px) {
   .textbox {
-    min-height: 480px;
+    min-height: 200px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
