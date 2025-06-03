@@ -1949,3 +1949,21 @@ padding:50px 0
   color: #fff;
 }
 
+@media (min-width: 992px) {
+  .textbox h3, .textbox h4 {
+    padding: 12px 0 6px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  .textbox p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  .textbox {
+    min-height: 260px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
