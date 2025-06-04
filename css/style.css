@@ -44,6 +44,11 @@ h1,h2, h3, h4, h5, h6 {
 	padding:0;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .row,.row-fluid {
 	margin-bottom:30px;
 }
@@ -1963,4 +1968,9 @@ padding:50px 0
 		padding-top: 32px;
 		padding-bottom: 32px;
 	}
+}
+
+.col-12 {
+  width: 100%;
+  display: block;
 }
