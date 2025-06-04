@@ -492,9 +492,7 @@ bottom: -30px;
 .form-control{
 border-radius:0;
 }
-
-
-/* Testimonial
+* Testimonial
 ----------------------------------*/
 .testimonial-area {
 padding: 0 0 0 0;
@@ -1963,4 +1961,259 @@ padding:50px 0
 		padding-top: 32px;
 		padding-bottom: 32px;
 	}
+}
+.box-area p {
+    color: #000; /* or another visible color */
+}
+.textbox {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  color: #333; /* Ensures text is visible */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Ensures equal height if needed */
+}
+
+.textbox h3 {
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.textbox p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.course-details {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #444;
+}
+
+.course-details i {
+  margin-right: 5px;
+  color: #007bff; /* Adds some icon color */
+}
+
+.duration, .mode {
+  display: block;
+  margin-bottom: 5px;
+}
+.row {
+  margin-bottom: 30px;
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.featured-desc {
+    color: #e01526; /* Change this to any color you want */
+    font-size: 18px; /* Optional: adjust size */
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* Modern Course Cards CSS - Add to your css/style.css */
+
+.modern-courses-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 80px 0;
+    position: relative;
+}
+
+.modern-courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.modern-course-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.modern-course-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.modern-course-card:hover::before {
+    transform: scaleX(1);
+}
+
+.modern-course-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modern-course-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.modern-course-icon::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.python-ai .modern-course-icon::before {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.data-science .modern-course-icon::before {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.java-fullstack .modern-course-icon::before {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+.react-js .modern-course-icon::before {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.core-java .modern-course-icon::before {
+    background: linear-gradient(135deg, #ff8a80 0%, #ea4c88 100%);
+}
+
+.automation .modern-course-icon::before {
+    background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.modern-course-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.modern-course-description {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.modern-course-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.modern-meta-item {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.modern-meta-item i {
+    margin-right: 8px;
+    color: #4ecdc4;
+}
+
+.modern-course-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modern-course-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modern-skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.modern-skill-tag {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modern-section-header {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.modern-section-header h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.modern-section-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .modern-courses-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .modern-section-header h2 {
+        font-size: 2.5rem;
+    }
 }

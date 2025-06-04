@@ -221,3 +221,28 @@ jQuery(document).ready(function($) {
     });
 
 });
+
+// Add this JavaScript to your js/custom.js file or create a new JS file
+document.addEventListener('DOMContentLoaded', function() {
+    // Add interactive hover effects
+    document.querySelectorAll('.modern-course-card').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-10px) scale(1.02)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+
+    // Add click animation to buttons
+    document.querySelectorAll('.modern-course-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Add your enrollment logic here
+            alert('Redirecting to enrollment page...');
+            // window.location.href = 'enrollment.html';
+        });
+    });
+});
