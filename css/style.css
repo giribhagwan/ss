@@ -2222,3 +2222,25 @@ padding:50px 0
         font-size: 2.5rem;
     }
 }
+.event-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 20px 15px; /* spacing between columns and rows */
+}
+
+.event-table .label {
+  white-space: nowrap;
+  font-size: 16px;
+  vertical-align: middle;
+  color: #2c3e50;
+}
+
+.event-table .button-cell {
+  vertical-align: middle;
+}
+
+.event-table a.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  font-size: 15px;
+}
