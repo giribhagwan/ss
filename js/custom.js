@@ -138,7 +138,19 @@ jQuery(document).ready(function($) {
         $('.navbar-nav li a').on('click', function(){
             if (!$(this).parent().hasClass('dropdown')) {
                 $('.navbar-collapse').collapse('hide');
+                $('body').removeClass('nav-open'); // Remove nav-open when link is clicked
             }
+        });
+
+        // Add nav-open class to body when navbar is open
+        $('.navbar-toggle').on('click', function() {
+            setTimeout(function() {
+                if ($('.navbar-collapse').hasClass('in')) {
+                    $('body').addClass('nav-open');
+                } else {
+                    $('body').removeClass('nav-open');
+                }
+            }, 350); // match the CSS transition
         });
 
         // Add touch support for dropdown menus

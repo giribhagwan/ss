@@ -234,7 +234,7 @@ body {
         display: block;
         margin: 0;
         padding: 20px 0;
-        z-index: 1000;
+        z-index: 10;
         box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     }
 
@@ -252,5 +252,10 @@ body {
 
     .navbar-nav > li:last-child {
         border-bottom: none;
+    }
+
+    body.nav-open #wrapper {
+        transform: translateX(250px);
+        transition: transform 0.3s ease-in-out;
     }
 } 
