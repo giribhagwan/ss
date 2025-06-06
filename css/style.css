@@ -2599,3 +2599,14 @@ padding:50px 0
 .event-table .button-cell {
   padding-bottom: 18px;
 }
+/* Add to your style.css or inside a <style> tag in <head> */
+.event-details {
+  display: inline-block;
+  text-align: left;
+  max-width: 600px;
+}
+@media (max-width: 767px) {
+  .event-details {
+    max-width: 100%;
+  }
+}
